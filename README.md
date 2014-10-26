@@ -14,7 +14,8 @@ How does it work?
 + In MainActivity we have two overriden methods: onUpdate and onReceive.
     * In onUpdate we manage the views and intents. We are setting the pending intents to buttons and
     update via AppWidgetManager. Look at this code:
-    '@Override
+    '''java
+    @Override
      public void onUpdate(Context context, AppWidgetManager appWidgetManager,
                           int[] appWidgetIds) {
          super.onUpdate(context, appWidgetManager, appWidgetIds);
@@ -45,4 +46,5 @@ How does it work?
              appWidgetManager.updateAppWidget(currentId, views);
 
          }
-     }'
+     }
+     '''
