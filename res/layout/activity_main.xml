@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:layout_margin="@dimen/layout_margin"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/state"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/state"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/shutdownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/state"
+
+            android:layout_below="@+id/state"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:text="Shutdown PC"
+            style="@style/ButtonAppTheme"/>
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/state"
+            android:layout_below="@+id/state"
+
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:text="Restart PC"
+            style="@style/ButtonAppTheme"/>
+
+        <Button
+            android:id="@+id/hibernateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/state"
+            android:layout_below="@+id/state"
+
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:text="Hibernate PC"
+            style="@style/ButtonAppTheme"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
