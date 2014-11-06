@@ -11,8 +11,6 @@ import android.os.Message;
 import android.util.Log;
 import android.widget.RemoteViews;
 
-import io.panwrona.myapplication.R;
-
 /**
  * Main Widget Class.
  *

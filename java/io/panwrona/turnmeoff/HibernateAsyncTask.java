@@ -68,10 +68,10 @@ public class HibernateAsyncTask extends AsyncTask<String, String, TCPClient> {
         //Checking
         if(values[0].equals("hibernate")){
             tcpClient.stopClient();
-            mHandler.sendEmptyMessageDelayed(MainActivity.HIBERNATE, 1000);
+            mHandler.sendEmptyMessageDelayed(MainActivity.HIBERNATE, 2000);
         }else{
             tcpClient.sendMessage("wrong");
-            mHandler.sendEmptyMessageDelayed(MainActivity.ERROR, 1000);
+            mHandler.sendEmptyMessageDelayed(MainActivity.ERROR, 2000);
             tcpClient.stopClient();
         }
     }
@@ -83,7 +83,7 @@ public class HibernateAsyncTask extends AsyncTask<String, String, TCPClient> {
         if(result != null && result.isRunning()){
             result.stopClient();
         }
-        mHandler.sendEmptyMessageDelayed(MainActivity.SENT, 1000);
+        mHandler.sendEmptyMessageDelayed(MainActivity.SENT, 4000);
     }
 }
 

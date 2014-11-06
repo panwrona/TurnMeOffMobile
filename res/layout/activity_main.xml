@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    android:layout_margin="@dimen/layout_margin"
     tools:context="${relativePackage}.${activityClass}">
 
     <TextView
@@ -12,7 +11,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="25dp"
         android:textColor="#ffffff"
-        android:id="@+id/state"/>
+        android:id="@+id/state"
+        android:text="Waiting for command..."/>
     <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
@@ -24,10 +24,9 @@
 
         <Button
             android:id="@+id/shutdownButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignLeft="@+id/state"
-
             android:layout_below="@+id/state"
             android:textSize="12dp"
             android:textColor="#ffffff"
@@ -37,11 +36,10 @@
 
         <Button
             android:id="@+id/restartButton"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignLeft="@+id/state"
             android:layout_below="@+id/state"
-
             android:textSize="12dp"
             android:textColor="#ffffff"
             android:layout_weight="1"
@@ -50,11 +48,10 @@
 
         <Button
             android:id="@+id/hibernateButton"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignLeft="@+id/state"
             android:layout_below="@+id/state"
-
             android:textSize="12dp"
             android:textColor="#ffffff"
             android:layout_weight="1"

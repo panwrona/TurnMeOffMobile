@@ -162,7 +162,8 @@ How does it work?
                     in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
                     Log.d(TAG, "In/Out created");
-        ```
+                    ```
+
 
         After that, the infinite loop is started and is working as far as the response come:
 

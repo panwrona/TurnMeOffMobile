@@ -67,10 +67,10 @@ public class RestartAsyncTask extends AsyncTask<String, String, TCPClient> {
 
         if(values.equals("restart")){
             tcpClient.stopClient()                                      ;
-            mHandler.sendEmptyMessageDelayed(MainActivity.RESTART, 1000);
+            mHandler.sendEmptyMessageDelayed(MainActivity.RESTART, 2000);
         }else{
             tcpClient.sendMessage("wrong")                              ;
-            mHandler.sendEmptyMessageDelayed(MainActivity.ERROR,   1000);
+            mHandler.sendEmptyMessageDelayed(MainActivity.ERROR,   2000);
             tcpClient.stopClient()                                      ;
         }
     }
@@ -88,6 +88,6 @@ public class RestartAsyncTask extends AsyncTask<String, String, TCPClient> {
         if(result != null && result.isRunning()){
             result.stopClient();
         }
-        mHandler.sendEmptyMessageDelayed(MainActivity.SENT, 1000);
+        mHandler.sendEmptyMessageDelayed(MainActivity.SENT, 4000);
     }
 }
