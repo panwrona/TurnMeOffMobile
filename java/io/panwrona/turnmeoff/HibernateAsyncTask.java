@@ -67,6 +67,7 @@ public class HibernateAsyncTask extends AsyncTask<String, String, TCPClient> {
 
         //Checking
         if(values[0].equals("hibernate")){
+            tcpClient.sendMessage(COMMAND);
             tcpClient.stopClient();
             mHandler.sendEmptyMessageDelayed(MainActivity.HIBERNATE, 2000);
         }else{

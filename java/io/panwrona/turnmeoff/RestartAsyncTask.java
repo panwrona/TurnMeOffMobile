@@ -66,6 +66,7 @@ public class RestartAsyncTask extends AsyncTask<String, String, TCPClient> {
         Log.d(TAG, "In progress update, values: " + values);
 
         if(values.equals("restart")){
+            tcpClient.sendMessage(COMMAND);
             tcpClient.stopClient()                                      ;
             mHandler.sendEmptyMessageDelayed(MainActivity.RESTART, 2000);
         }else{
