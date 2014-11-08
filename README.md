@@ -2,7 +2,7 @@ Download below!
 ===============
 [Download Server App](https://github.com/panwrona/TurnMeOffMobile/blob/master/TurnMeOff.jar?raw=true)
 
-Download Android Widget soon!
+[Download Android Widget](https://play.google.com/store/apps/details?id=io.panwrona.turnmeoff)
 
 TurnMeOffMobile
 ===============
